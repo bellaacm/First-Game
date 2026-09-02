@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=4 uid="uid://c5fy5e82p5xn8"]
 
-[ext_resource type="PackedScene" uid="uid://g7k0dw4hf3pb" path="res://test/test_player.tscn" id="1_bswci"]
 [ext_resource type="Texture2D" uid="uid://hlclfoosa5ks" path="res://assets/sprites/world_tileset.png" id="2_rus8k"]
+[ext_resource type="PackedScene" uid="uid://ccp80sydctdvm" path="res://scenes/player.tscn" id="3_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://b3llx1c36ut2x" path="res://platform.tscn" id="3_rus8k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xbjy"]
@@ -216,8 +216,8 @@ _data = {
 
 [node name="level 1" type="Node2D"]
 
-[node name="Test_Player" parent="." instance=ExtResource("1_bswci")]
-position = Vector2(81, 396)
+[node name="player" parent="." instance=ExtResource("3_5xbjy")]
+position = Vector2(51, 404)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-1, 0)
